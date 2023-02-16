@@ -1,0 +1,33 @@
+body{
+    position: relative;
+}
+ragged-text{
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    display: block;
+    margin-left: 0px;
+    background-color: lightgray;
+    /*letter-spacing: -0.015em;*/
+    resize: horizontal; 
+}
+line{
+    display: inline;
+    overflow: visible;
+}
+
+line:hover{
+    background-color: blueviolet;
+}
+word{
+    box-shadow: 0 0 0 1px white;
+    overflow: visible;
+    overflow-wrap: anywhere;
+    white-space: nowrap;
+}
+
+/*
+line:nth-child(1){
+    background-color: red;
+    letter-spacing: 10px;
+}
+*/

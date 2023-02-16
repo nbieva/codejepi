@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="div"><p id="p">Abo. Ebisddnde llaceptati unt. </p></div>
+
+        <style>
+            div{
+                background-color: red;
+                width: 230px;
+                display: block;
+               /* letter-spacing: -1.5px;*/
+            }
+            p{
+                display: inline;
+                border: solid blue 1px;
+            }
+        </style>
+
+
+        <script>
+            console.log("Box Width: " + div.offsetWidth)
+            console.log("Line Width: "+ p.offsetWidth)
+            console.log("Line Char: " + p.textContent.length)
+            console.log(div.offsetWidth - p.offsetWidth);
+
+            // Je récupère la difference ( l'espace vide )
+            let diff =  div.offsetWidth - p.offsetWidth;
+
+            // Je divise la difference par le nbr de charactère
+            let tracking = diff / p.textContent.length;
+            
+            // J'applique la valeur de tracking
+            p.style.letterSpacing = tracking + "px";
+
+        </script>
+</body>
+</html>
